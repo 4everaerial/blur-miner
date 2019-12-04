@@ -21,18 +21,14 @@
         "memory-pool": false,
         "cn/blur": [
             [1, 0],
-            [1, 1],
-            [1, 2],
-            [1, 3],
-            [1, 4],
-            [1, 5]
+            [1, 1]
         ]
     },
     "opencl": {
         "enabled": false
     },
     "cuda": {
-        "enabled": true,
+        "enabled": false,
         "loader": "./libxmrig-cuda.so",
         "nvml": true,
         "cn/blur": [{
@@ -46,12 +42,12 @@
     },
     "log-file": null,
     "pools": [{
-        "url": "167.86.119.62:4242",
-        "user": "bL465zcWPDJgNhZA2Z1tng5LtmZUQ5dawQuKFbXLFS6rhczHeoUv2kfXt8nTg8p7ZN7Cyqe4hqDrNaVsFmLYr5sb1h4x5nUAk",
+        "url": "172.16.1.47:52542",
+        "user": "bL4LTP47iL3EtkBhdAk15DfjekQD4qkTyHccamKn9HTYZavj2nzNJWphXS54e9fECAFeP7ks7qHoobmynKoYYUTL2dWctUGG9",
         "enabled": true,
         "tls": false,
         "tls-fingerprint": null,
-        "daemon": false,
+        "daemon": true,
         "daemon-poll-interval": 25
     }],
     "print-time": 60,
