@@ -1,5 +1,5 @@
 #!/bin/bash
-apt install libhwloc5
+apt install hwloc
 
 dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
