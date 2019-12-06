@@ -7,7 +7,7 @@ cd blur-miner
 mkdir build
 cd build
 
-cmake -WITH_OPENCL=OFF ${dir}
+cmake -WITH_OPENCL=OFF ..
 make 
 
 #mkdir -p ${dir}/build/cuda
@@ -18,5 +18,6 @@ make
 
 #cp ./libxmrig-cuda.so ../libxmrig-cuda.so
 
-cd ${dir}
-cp ${dir}/src/config.json ${dir}/build/config.json
+cd 
+cd blur-miner
+cp /src/config.json /build/config.json
