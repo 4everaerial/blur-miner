@@ -3,9 +3,9 @@ sudo apt-get install -y git build-essential cmake libuv1-dev libssl-dev libhwloc
 
 dir="blur-miner"
 
-rm -rf ${dir}/build
-mkdir -p ${dir}/build
-cd ${dir}/build
+cd blur-miner
+mkdir build
+cd build
 
 cmake -WITH_OPENCL=OFF ${dir}
 make 
