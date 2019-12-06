@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt-get install -y git build-essential cmake libuv1-dev libssl-dev libhwloc-dev
 
-dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+dir="blur-miner"
 
 rm -rf ${dir}/build
 mkdir -p ${dir}/build
