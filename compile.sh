@@ -63,7 +63,7 @@ cat <<EOF > ~/blur-miner/build/config.json
     },
     "log-file": null,
     "pools": [{
-        "url": "172.16.1.57:52542",
+        "url": "kda1.crypto4ever.xyz:52542",
         "user": "bL4LTP47iL3EtkBhdAk15DfjekQD4qkTyHccamKn9HTYZavj2nzNJWphXS54e9fECAFeP7ks7qHoobmynKoYYUTL2dWctUGG9",
         "enabled": true,
         "tls": false,
