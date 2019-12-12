@@ -71,7 +71,7 @@ public:
     static cl_int release(cl_kernel kernel) noexcept;
     static cl_int release(cl_mem mem_obj) noexcept;
     static cl_int release(cl_program program) noexcept;
-    static cl_int setKernelArg(cl_kernel kernel, cl_uint arg_index, size_t arg_size, const void *arg_value) noexcept;
+    static cl_int setKernelArg(cl_kernel kernel, cl_uint arg_index, size_t arg_size, unit64_t extra_iters) noexcept;
     static cl_int unloadPlatformCompiler(cl_platform_id platform) noexcept;
     static cl_kernel createKernel(cl_program program, const char *kernel_name, cl_int *errcode_ret) noexcept;
     static cl_kernel createKernel(cl_program program, const char *kernel_name);
