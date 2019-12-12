@@ -231,7 +231,7 @@ xmrig::OclBackend::~OclBackend()
 
 bool xmrig::OclBackend::isEnabled() const
 {
-    return d_ptr->controller->config()->cl().isEnabled() && OclLib::isInitialized() && d_ptr->platform.isValid() && !d_ptr->devices.empty();
+    return d_ptr->controller->config()->cl().isEnabled() && OclLib::isInitialized() && !d_ptr->devices.empty();
 }
 
 
@@ -302,7 +302,7 @@ void xmrig::OclBackend::setJob(const Job &job)
         return stop();
     }
 
-    auto threads = cl.get(d_ptr->controller->miner(), d_ptr->platform, d_ptr->devices);
+    auto threads = cl.get(d_ptr->controller->miner(), d_ptr->devices);
     if (!d_ptr->threads.empty() && d_ptr->threads.size() == threads.size() && std::equal(d_ptr->threads.begin(), d_ptr->threads.end(), threads.begin())) {
         return;
     }
