@@ -182,7 +182,7 @@ public:
                        data.thread.stridedIndex(),
                        data.thread.stridedIndex() == 2 ? std::to_string(data.thread.memChunk()).c_str() : "-",
                        data.thread.unrollFactor(),
-                       data.thread.intensity(),
+                       data.thread.intensity()* CnAlgo::CN_MEMORY,
                        data.device.printableName().data()
                        );
 
