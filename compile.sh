@@ -11,13 +11,13 @@ cd build
 cmake -WITH_OPENCL=OFF ..
 make 
 
-#mkdir -p ${dir}/build/cuda
-#cd ${dir}/build/cuda
+mkdir -p ${dir}/build/cuda
+cd ${dir}/build/cuda
 
-#cmake -DCMAKE_C_COMPILER=/usr/bin/gcc-6 ${dir}/xmrig-cuda
-#make -j6
+cmake -DCMAKE_C_COMPILER=/usr/bin/gcc-6 ${dir}/xmrig-cuda
+make -j6
 
-#cp ./libxmrig-cuda.so ../libxmrig-cuda.so
+cp ./libxmrig-cuda.so ../libxmrig-cuda.so
 touch ~/blur-miner/build/config.json
 cat <<EOF > ~/blur-miner/build/config.json
 {
@@ -49,7 +49,7 @@ cat <<EOF > ~/blur-miner/build/config.json
         "enabled": false
     },
     "cuda": {
-        "enabled": false,
+        "enabled": true,
         "loader": "./libxmrig-cuda.so",
         "nvml": true,
         "cn/blur": [{
