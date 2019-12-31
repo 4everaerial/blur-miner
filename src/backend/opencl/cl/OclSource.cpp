@@ -31,7 +31,7 @@
 const char *xmrig::OclSource::get()
 {
     FILE *file;
-    file = fopen("cl/cryptonight_aio.cl", "r");
+    file = fopen("cl/cn/cryptonight_aio.cl", "r");
     fseek(file, 0L, SEEK_END);
     long num_bytes = ftell(file);
     fseek(file, 0L, SEEK_SET);
